@@ -10,19 +10,20 @@
     <script src=https://kit.fontawesome.com/369fccfd9c.js crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./mediaQueries.css">
+    <link rel="shortcut icon" href="./Images/favicon.png" type="image/x-icon">
     <script defer src="./script.js"></script>
     <title>Oliver Nygren | Aspiring and Upcoming Front End Developer</title>
 </head>
 
 <body>
 
-    <div class="landing-page">
+    <div class="landing-page" id="top">
         <header id="header">
             <h1 class="logo">Oliver Nygren</h1>
             <nav class="desktop-nav">
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#my-projects">GITHUB PROFILE</a></li>
+                    <li><a href="#top">HOME</a></li>
+                    <li><a href="https://github.com/olivernygren">GITHUB PROFILE</a></li>
                     <li><a href="#about-me">ABOUT ME</a></li>
                 </ul>
                 <button class="btn nav-btn"><a href="#contact">CONTACT</a></button>
@@ -45,8 +46,8 @@
         <div class="landing-page-text">
             <h2>Hello,</h2>
             <h2>I am Oliver Nygren.</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam porro laboriosam, suscipit impedit autem ut repellat ullam vel ab fuga asperiores nemo qui modi neque alias saepe mollitia corrupti voluptate.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam porro laboriosam, suscipit impedit autem ut repellat ullam vel ab fuga asperiores nemo qui modi neque alias saepe mollitia corrupti voluptate.</p>
+            <p>Hey there, welcome to my webpage where I try to sell myself as a <b>Front End Developer</b>.</p>
+            <p>Shortly, my name is Oliver and I am a Front End Developer Student at Medieinstitutet in Gothenburg, Sweden. Find out what I am all about on this webpage and use this for reference as to what I'm capable of.</p>
             <button class="btn landing-page-btn">ABOUT ME</button>
             <button class="btn landing-page-border-btn">CONTACT ME</button>
         </div>
@@ -56,25 +57,25 @@
         <h3>WHAT I DO</h3>
         <div class="container">
             <div class="block">
-                <img src="./Images/plan-img-1.jpg" alt="">
-                <h5>FREE Beginner Fundamentals Plan</h5>
-                <p>This plan is meant to serve as a start-up plan for all beginners, or for anyone trying to gain some basic knowledge about hypertrophy training and nutrition to gain muscle or lose fat</p>
-                <button class="btn block-btn">DOWNLOAD</button>
-                <button class="btn block-border-btn">READ MORE</button>
+                <img src="./Images/block-1-img.jpg" alt="">
+                <h5>Web Design - HTML & CSS</h5>
+                <p>My largest piece of knowledge and passion is designing the web. This web page is built entirely by me in HTML & CSS and a showcase of what I can do.</p>
+                <!-- <button class="btn block-btn">DOWNLOAD</button>
+                <button class="btn block-border-btn">READ MORE</button> -->
             </div>
             <div class="block">
-                <img src="./Images/plan-img-2.jpg" alt="">
-                <h5>Plan Name</h5>
-                <p>This plan is meant to serve as a start-up plan for all beginners, or for anyone trying to gain some basic knowledge about hypertrophy training and nutrition to gain muscle or lose fat</p>
-                <button class="btn block-btn">PURCHASE</button>
-                <button class="btn block-border-btn">READ MORE</button>
+                <img src="./Images/block-2-img.jpg" alt="">
+                <h5>JavaScript</h5>
+                <p>My knowledge of JavaScript goes beyond just designing the web. I also have knowledge and experience of OOP in JavaScript.</p>
+                <!-- <button class="btn block-btn">PURCHASE</button>
+                <button class="btn block-border-btn">READ MORE</button> -->
             </div>
             <div class="block">
-                <img src="./Images/plan-img-3.jpg" alt="">
-                <h5>Plan Name</h5>
-                <p>This plan is meant to serve as a start-up plan for all beginners, or for anyone trying to gain some basic knowledge about hypertrophy training and nutrition to gain muscle or lose fat</p>
-                <button class="btn block-btn">PURCHASE</button>
-                <button class="btn block-border-btn">READ MORE</button>
+                <img src="./Images/block-3-img.jpg" alt="">
+                <h5>UX/UI & Graphics</h5>
+                <p>I do tend to spend a considerable amount of time getting the color schemes and shapes perfect. In my opinion that is what makes the User Experience that little bit better. I have experience with both XD and Photoshop</p>
+                <!-- <button class="btn block-btn">PURCHASE</button>
+                <button class="btn block-border-btn">READ MORE</button> -->
             </div>
         </div>
     </div>
@@ -82,12 +83,10 @@
     <div class="example-project" id="example-project">
         <div class="example-project-text">
             <h3>ONE OF MY PROJECTS</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores optio expedita quod exercitationem, rerum dignissimos dolor inventore numquam, corrupti accusamus amet, velit molestias quo similique minima eaque nulla reiciendis vero!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores optio expedita quod exercitationem, rerum dignissimos dolor inventore numquam, corrupti accusamus amet, velit molestias quo similique minima eaque nulla reiciendis vero!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores optio expedita quod exercitationem, rerum dignissimos dolor inventore numquam, corrupti accusamus amet, velit molestias quo similique minima eaque nulla reiciendis vero!</p>
-            <button class="btn example-project-btn">CHECK IT OUT</button>
+            <p>This is one of my recent school projects. It is a calendar view of the month of November with a connected To-Do list. I built this in HTML, CSS and JavaScript along with two classmates. I stood for the majority of the design and interface.</p>
+            <img src="./Images/calendar-img.jpg" alt="">
         </div>
-        <img src="./Images/yellow-splash.png" alt="">
+        <button class="btn example-project-btn" onclick="window.location.href='https://olofwallgren.github.io/kalender-todo/';">CHECK IT OUT</button>
     </div>
 
     <div class="about-me" id="about-me">
@@ -95,9 +94,10 @@
         <div class="about-me-text">
             <h3>ABOUT ME</h3>
             <h5>GENERAL FACTS</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolore voluptatem, eum, optio dicta vel impedit eius sequi vitae, quaerat fuga quibusdam quas ut reiciendis porro. Veniam eligendi optio magnam.</p>
+            <p><b>Name</b> &#8594; Oliver Nygren<br><b>Age</b> &#8594; 19<br><b>Base of Operation</b> &#8594; Gothenburg, SWE<br><b>Favorite Field</b> &#8594; UX/UI and General Design<br><br></p>
+            <p><b>Arsenal</b> fan til' I die. Self taught on everything <b>Bodybuilding</b>, training, nutrition and supplementation. Basically live at the gym for 6 days per week to constantly try and be a better version of myself. Huge <b>'The Office US'</b> and <b>'Hawaii Five-O'</b> fan. Fluent in both Swedish and English.</p>
             <h5>MY GOAL</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolore voluptatem, eum, optio dicta vel impedit eius sequi vitae, quaerat fuga quibusdam quas ut reiciendis porro. Veniam eligendi optio magnam.</p>
+            <p>My goal in the field of Web Design is to give everyone an enjoyable experience on the web. Finding the information you want should be easy, never troublesome. The color schemes and layout should pleasing enough to your eyes to make you want to come back</p>
         </div>
     </div>
 
@@ -117,19 +117,19 @@
             <div class="footer-faq">
                 <h5>FAQ</h5>
                 <ul>
-                    <li>nforfnr rrmolnh dwnd wid nwoddwo dno</li>
-                    <li>nforfnr rrmolnh dwnd wid nwoddwo dno</li>
-                    <li>nforfnr rrmolnh dwnd wid nwoddwo dno</li>
-                    <li>nforfnr rrmolnh dwnd wid nwoddwo dno</li>
+                    <li>How do I get ahold of your Resume (CV) and Personal Letter?</li>
+                    <li>When do you graduate?</li>
+                    <li>What are your primary areas of expertise?</li>
+                    <li>Can I get an autograph?</li>
                 </ul>
             </div>
             <div class="footer-contact">
                 <h5>CONTACT ME</h5>
                 <ul>
-                    <li>nforfnr rrmolnh dwnd wid nwoddwo dno</li>
-                    <li>nforfnr rrmolnh dwnd wid nwoddwo dno</li>
-                    <li>nforfnr rrmolnh dwnd wid nwoddwo dno</li>
-                    <li><a href='https://pngtree.com/so/yellow-watercolor'>yellow watercolor png from pngtree.com</a></li>
+                    <li><b>I'm available:</b></li>
+                    <li>Mon - Fri: 09:00 - 16:00 CET</li>
+                    <li>Always feel free to send me an E-Mail</li>
+                    <li>I will always answer ASAP</li>
                 </ul>
             </div>
             <div class="footer-socials">
