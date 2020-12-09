@@ -397,6 +397,7 @@ header.active {
     text-align: right;
     padding: 0 2rem;
     letter-spacing: 1px;
+    width: 67%;
 }
 
 .about-me h3 {
@@ -415,14 +416,14 @@ header.active {
 .contact {
     background-color: var(--clr-med-grey);
     text-align: center;
-    padding: 3rem;
+    padding: 2rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
 .contact h3 {
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
     font-size: 1.9rem;
     color: var(--clr-white);
 }
