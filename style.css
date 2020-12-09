@@ -276,7 +276,6 @@ header.active {
 .what-i-do img {
     width: 18rem;
     margin-bottom: .5rem;
-    cursor: pointer;
     transition: all 150ms ease-in-out 0s;
 }
 
@@ -433,6 +432,10 @@ header.active {
     margin-bottom: 1rem;
     font-family: 'Poppins';
     outline: none;
+}
+
+.contact input[type="submit"] {
+    margin-bottom: 0;
 }
 
 .contact form {
