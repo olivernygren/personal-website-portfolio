@@ -57,7 +57,7 @@ header.active {
     font-family: 'Norican';
     font-weight: lighter;
     font-size: 1.8rem;
-    var(--clr-white)-space: nowrap;
+    white-space: nowrap;
 }
 
 /* NAV =================================================== */
@@ -84,7 +84,7 @@ header.active {
     font-weight: 500;
     transition: var(--btn-transition);
     display: block;
-    var(--clr-white)-space: nowrap;
+    white-space: nowrap;
 }
 
 .nav-btn {
@@ -441,19 +441,62 @@ header.active {
     width: 30rem;
     margin-left: auto;
     margin-right: auto;
+    background-color: rgb(146, 146, 146);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.418);
+    padding: 1rem;
 }
 
-#message {
-    padding-bottom: 10rem;
+textarea {
+    padding: .5rem;
+    margin-bottom: 1rem;
+    resize: vertical;
+    font-family: 'Poppins', sans-serif;
 }
 
 .submit-btn {
     background-color: var(--clr-special);
     color: var(--clr-blackish);
     border: 2px solid var(--clr-special);
-    width: 7rem;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+    outline: none;
+}
+
+#status {
+    padding: .5rem;
+    border-radius: 6px;
+    font-size: .9rem;
+    font-weight: 600;
+    width: 30rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+#status.success {
+    background-color: rgb(121, 224, 95);
+    animation: status 4s ease-in-out forwards;
+}
+
+#status.error {
+    background-color: rgb(255, 59, 59);
+    color: white;
+    animation: status 4s ease-in-out forwards;
+}
+
+@keyframes status {
+    0% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    90% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    100% {
+        opacity: 0;
+        pointer-events: none;
+    }
 }
 
 /* HOVER EFFECTS */

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./mediaQueries.css">
     <link rel="shortcut icon" href="./Images/favicon.png" type="image/x-icon">
     <script defer src="./script.js"></script>
+    <script defer src="./form-handler.js"></script>
     <title>Oliver Nygren | Aspiring and Upcoming Front End Developer</title>
 </head>
 
@@ -47,7 +48,7 @@
             <h2>Hello,</h2>
             <h2>I am Oliver Nygren.</h2>
             <p>Hey there, welcome to my webpage where I try to sell myself as a <b>Front End Developer</b>.</p>
-            <p>Shortly, my name is Oliver and I am a Front End Developer Student at Medieinstitutet in Gothenburg, Sweden. Find out what I am all about on this webpage and use this for reference as to what I'm capable of.</p>
+            <p>Shortly, my name is Oliver and I am a Front End Developer Student at Medieinstitutet in Gothenburg, Sweden. Find out what I am all about on this webpage and use this for reference as to what I'm capable of creating.</p>
             <button class="btn landing-page-btn">ABOUT ME</button>
             <button class="btn landing-page-border-btn">CONTACT ME</button>
         </div>
@@ -103,12 +104,14 @@
 
     <div class="contact" id="contact">
         <h3>CONTACT ME</h3>
-        <form>
+        <form action="https://formspree.io/f/xoqpkdaq" method="POST" id="my-form">
             <input type="email" name="email" id="email" placeholder="Your E-Mail Address">
+            <input type="text" name ="name" id="name" placeholder="Name">
             <input type="text" name ="subject" id="subject" placeholder="Subject">
-            <input type="text" name="message" id="message" placeholder="Type Your Message Here...">
-            <input type="submit" value="Send" class="btn submit-btn">
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Type Your Message Here... "></textarea>
+            <input type="submit" value="SUBMIT" class="btn submit-btn">
         </form>
+        <div id="status"></div>
     </div>
 
     <footer>

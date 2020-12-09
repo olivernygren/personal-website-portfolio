@@ -14,15 +14,12 @@ window.onscroll = function() {
 const desktopNav = document.querySelector('.desktop-nav');
 const menuIcon = document.querySelector('.hamburger-menu');
 const mobileNav = document.querySelector('.mobile-nav');
-// const mobileNavLink = document.querySelectorAll('.mobile-nav-link');
 
 menuIcon.addEventListener('click', () => {
     mobileNav.classList.toggle('change');
 });
 
-// mobileNavLink.addEventListener('click', () => {
-//     mobileNav.classList.toggle('change');
-// });
+
 
 
 
