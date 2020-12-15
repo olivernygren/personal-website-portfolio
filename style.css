@@ -8,7 +8,7 @@
     --clr-special: #FFDF6C; 
     --clr-white: #FFFFFF; 
 
-    --btn-transition: all 250ms ease-in-out 0s;
+    --btn-transition: all 300ms ease-in-out 0s;
 }
 
 * {
@@ -27,14 +27,14 @@ body {
 /* BASIC BUTTON STYLE =============================================== */
 
 .btn {
-    padding: .3rem .9rem;
+    padding: .4rem 1rem;
     background: var(--clr-special);
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    border: 2px solid var(--clr-special);
+    border: 1.5px solid var(--clr-special);
     transition: var(--btn-transition);
     cursor: pointer;
-    border-radius: 100px;
+    border-radius: 7px;
 }
 
 /* HEADER ================================================= */
@@ -113,7 +113,7 @@ header.active {
 
 .nav-btn:hover {
     background-color: var(--clr-white);
-    border: 2px solid var(--clr-white);
+    border: 1.5px solid var(--clr-white);
 }
 
 .desktop-nav i:hover {
